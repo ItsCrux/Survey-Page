@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Survey Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Gaming Survery Form</h1>
+    <p id="description">A survery to determine how often you game.</p>
+    <p id="description">(will take less than a minute)</p>
+    <div class="container">
+        <form id="survey-form" action="#">
+            <div class="formElement">
+                <label id="name-label" for="name">Name</label>
+                <input class="formInput" type="text" name="name" id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="formElement">
+                <label id="email-label" for="email">Email</label>
+                <input class="formInput" type="email" name="email" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="formElement">
+                <label id="number-label" for="number">Age</label>
+                <input class="formInput" type="number" name="age" id="number" placeholder="Age" min="13" max="120"
+                    required />
+            </div>
+
+            <div class="formElement">
+                <p>What is your gender?</p>
+                <select class="formInput" id="dropdown" name="gender" required>
+                    <option disabled selected value class="formOption">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="NonBinary">Non-Binary</option>
+                    <option value="Trans">Trans</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="formElement">
+                <p>How much time you spend playing games every day?</p>
+                <label>
+                    <input name="game-frequency" value="1" type="radio" class="inputRadio" checked />Less than
+                    1 hour</label>
+                <label>
+                    <input name="game-frequency" value="3" type="radio" class="inputRadio" />Between 1 to 3
+                    hours</label>
+
+                <label><input name="game-frequency" value="4" type="radio" class="inputRadio" />3+
+                    hours</label>
+            </div>
+
+            <div class="formElement">
+                <p>
+                    What genre of games you like playing most?
+                </p>
+                <select class="formInput" id="like" name="like" required>
+                    <option disabled selected value class="formOption">Select an option</option>
+                    <option value="Roleplaying">Role-playing (RPG, ARPG, and More)</option>
+                    <option value="Simulation-sports">Simulation and sports</option>
+                    <option value="Puzzlers-party">Puzzlers and party games</option>
+                    <option value="Action-adventure">Action-adventure</option>
+                    <option value="Survival-horror">Survival and horror</option>
+                    <option value="MOBA">Multiplayer online battle arena (MOBA)</option>
+                    <option value="Shooters">Shooters (FPS and TPS)</option>
+                    <option value="RTS">Real-time strategy (RTS)</option>
+                    <option value="Sandbox">Sandbox</option>
+                </select>
+            </div>
+
+
+            <div class="formElement">
+                <p>
+                    Select the games you have played before or are currently playing.
+                </p>
+
+                <label><input name="select" value="lol" type="checkbox" class="inputCheckbox" />League of Legends
+                    (LOL)</label>
+                <label>
+                    <input name="select" value="dota" type="checkbox" class="inputCheckbox" />DotA 2</label>
+                <label><input name="select" value="valorant" type="checkbox" class="inputCheckbox" />
+                    Valorant</label>
+                <label><input name="select" value="csgo" type="checkbox" class="inputCheckbox" />Counter Strike:
+                    GO</label>
+                <label><input name="select" value="minecraft" type="checkbox" class="inputCheckbox" />Minecraft</label>
+                <label><input name="select" value="gta" type="checkbox" class="inputCheckbox" />Grand Theft Auto V
+                    (GTA)</label>
+                <label><input name="select" value="pubg" type="checkbox" class="inputCheckbox" />Playerunknwon
+                    Battlegrounds (PUBG)</label>
+                <label><input name="select" value="fortnite" type="checkbox" class="inputCheckbox" />Fortnite</label>
+                <label><input name="select" value="apex" type="checkbox" class="inputCheckbox" />Apex Legends</label>
+                <label><input name="select" value="starcraft" type="checkbox" class="inputCheckbox" />Starcraft
+                    2</label>
+                <label><input name="select" value="wow" type="checkbox" class="inputCheckbox" />World of
+                    Warcraft</label>
+            </div>
+
+            <div class="formElement">
+                <p>Do you have any comments or anything else to add?</p>
+                <textarea id="comments" class="inputTextarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="formElement">
+                <button type="submit" id="submit" class="submitButton">
+                    Submit
+                </button>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
